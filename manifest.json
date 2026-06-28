@@ -1,0 +1,17 @@
+{
+  "name": "Vimput",
+  "description": "Bind vim motions to every input",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_icon": "assets/vim.svg"
+  }
+}
