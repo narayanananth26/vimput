@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["target.js", "content.js"],
+      "js": ["target.js", "vim.js", "content.js"],
       "css": ["index.css"],
       "run_at": "document_end",
       "all_frames": true,

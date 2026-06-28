@@ -5,14 +5,23 @@
   width: fit-content;
   height: fit-content;
   z-index: 2147483647;
-  padding: 2px 6px;
-  font: 500 10px monospace;
+  padding: 5px 12px;
+  font: 600 14px monospace;
+  letter-spacing: 0.5px;
   color: #fff;
   background-color: #9e9e9e;
   border-radius: 3px;
   pointer-events: none;
 }
 
-.vimput-badge.active {
+.vimput-badge.active.insert {
   background-color: #2e7d32;
+}
+
+.vimput-badge.active.normal {
+  background-color: #1565c0;
+}
+
+.vimput-badge.active.visual {
+  background-color: #ad1457;
 }
