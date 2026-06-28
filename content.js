@@ -1,10 +1,16 @@
-const targets = document.querySelectorAll("input, textarea");
+const badge = document.createElement("div");
+badge.textContent = "INSERT";
+badge.className = "vimput-badge";
+document.body.appendChild(badge);
 
-const highlight = () => {
-  targets.forEach((el) => {
-    el.style.backgroundColor = "red";
-    console.log("highlighed - ", el.outerHTML);
-  });
-};
+document.addEventListener("focusin", (e) => {
+  if (VimputTarget.resolveTarget(e)) {
+    badge.classList.add("active");
+  }
+});
 
-highlight(targets);
+document.addEventListener("focusout", (e) => {
+  if (VimputTarget.resolveTarget(e)) {
+    badge.classList.remove("active");
+  }
+});

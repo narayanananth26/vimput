@@ -1,0 +1,18 @@
+.vimput-badge {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2147483647;
+  padding: 2px 6px;
+  font: 500 10px monospace;
+  color: #fff;
+  background-color: #9e9e9e;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.vimput-badge.active {
+  background-color: #2e7d32;
+}
