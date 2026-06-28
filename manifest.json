@@ -15,6 +15,9 @@
     }
   ],
   "action": {
-    "default_icon": "assets/vim.svg"
+    "default_icon": "assets/vim.png"
+  },
+  "icons": {
+    "128": "assets/vim.png"
   }
 }
